@@ -46,7 +46,7 @@ O diagrama abaixo representa a estrutura lógica do banco de dados, com as entid
 O banco utiliza da codificação utf8mb4_general_ci para compatibilidade ampla com MySQL 8+.
 
 ### 🔄 Triggers de Negócio
-##### 🔹 Validação de preço de venda das peças
+##### **[🔹 Validação de preço de venda das peças](./triggers/validar_preco_venda.sql)**
 Garante que nenhuma peça tenha preço de venda menor que o custo.
 
 ### 💾 Dados de Teste (DML)
