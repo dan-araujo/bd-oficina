@@ -1,0 +1,6 @@
+CREATE TABLE pecas (
+id INT PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(100) NOT NULL,
+custo DECIMAL(10,2) NOT NULL CHECK (custo > 0),
+preco_venda DECIMAL(10,2) NOT NULL CHECK (preco_venda >)
+);
