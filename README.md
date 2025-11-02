@@ -46,6 +46,6 @@ Foram inseridos alguns registros nas tabelas, com dados simulados e coerentes (n
 
 #### 🔍 Consultas SQL (Simples e Complexas)
 1. **[Recuperações básicas](./consultas/recuperacao_simples.sql)**
-2. **[Filtros com WHERE](./consultas/status_ordens_servico.sql)**
-3. **[Expressões derivadas](./consultas/atributos_derivados.sql)**
-4. **[ORDER BY - Tpp clientes por gasto (considerando todas as ordens de serviço concluídas)](./consultas/clientes_fieis.sql)**
+2. **[Quais ordens de servico estão em aberto ou em andamento?](./consultas/status_ordens_servico.sql)**
+3. **[Total por item de serviço/peça (quantidade * valor - desconto)](./consultas/atributos_derivados.sql)**
+4. **[ORDER BY - Top clientes por gasto (considerando todas as ordens de serviço concluídas)](./consultas/clientes_fieis.sql)**
