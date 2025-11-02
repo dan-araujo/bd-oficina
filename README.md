@@ -45,4 +45,4 @@ Garante que nenhuma peça tenha preço de venda menor que o custo.
 Foram inseridos alguns registros nas tabelas, com dados simulados e coerentes (nomes de clientes, veículos, serviços, etc.) para permitir os testes nas consultas e validações de relacionamento.
 
 #### 🔍 Consultas SQL (Simples e Complexas)
-1. **[Recuperações básicas](consultas/recuperacao_simples.sql)**
+1. **[Recuperações básicas](./consultas/recuperacao_simples.sql)**
