@@ -34,18 +34,31 @@ O projeto inclui:
 - Pagamentos podem ocorrer em múltiplicas parcelas (`1:N`).
 - Nenhum peça pode ter **preço de venda menor que o custo** (validado via trigger).
 
-#### 🧩 Estrutura do banco (DDL)
-> O banco utilizada codificação utf8mb4_general_ci para compatibilidade ampla com MySQL 8+.
+### Modelo Entidade-Relacionamento (EER)
+O diagrama abaixo representa a estrutura lógica do banco de dados, com as entidades, chaves-primárias, chaves-estrangeiras e relacionamentos definidos:
 
-#### 🔄 Triggers de Negócio
+ 📎**Arquivo:** `Diagrama Entidade-Relacionamento Oficina.png`
+  ![Modelo EER](./Diagrama%20Entidade-Relacionamento%20Oficina.png)
+  
+> Este modelo segue a filosofia **ER (Entidade-Relacionamento)**, representando as entidades, atributos e relacionamentos de forma lógica e relacional. A estrutura prioriza a normalização, o uso de **chaves primárias e estrangeiras**, além da aplicação de **restrições de integridade** (CHECK, DEFAULT, ENUM) e **mapeamento direto para o modelo físico relacional**.
+
+### 🧩 Estrutura do banco (DDL)
+O banco utilizada codificação utf8mb4_general_ci para compatibilidade ampla com MySQL 8+.
+
+### 🔄 Triggers de Negócio
 ##### 🔹 Validação de preço de venda das peças
 Garante que nenhuma peça tenha preço de venda menor que o custo.
 
-#### 💾 Dados de Teste (DML)
+### 💾 Dados de Teste (DML)
 Foram inseridos alguns registros nas tabelas, com dados simulados e coerentes (nomes de clientes, veículos, serviços, etc.) para permitir os testes nas consultas e validações de relacionamento.
 
-#### 🔍 Consultas SQL (Simples e Complexas)
+### 🔍 Consultas SQL (Simples e Complexas)
 1. **[Recuperações básicas](./consultas/recuperacao_simples.sql)**
 2. **[Quais ordens de servico estão em aberto ou em andamento?](./consultas/status_ordens_servico.sql)**
 3. **[Total por item de serviço/peça (quantidade * valor - desconto)](./consultas/atributos_derivados.sql)**
-4. **[ORDER BY - Top clientes por gasto (considerando todas as ordens de serviço concluídas)](./consultas/clientes_fieis.sql)**
+4. **[Total das ordens de serviço (somando serviços + peças)](./consultas/total_servicos_pecas.sql)**
+5. **[Top clientes por gasto (considerando todas as ordens de serviço concluídas)](./consultas/clientes_fieis.sql)**
+6. **[Clientes com pelo menos 1 ordem de serviço concluída acima de R$ 200](./consultas/ordem_servico_acima_200.sql)**
+7. **[Classificação de Ordem de Serviço por faixa de valor](./consultas/faixa_valor_ordens_servicos.sql)**
+8. **[Produtos e peças acima do preço médio](./consultas/faixa_valor_ordens_servicos.sql)**
+9. **[Visão 360º das ordens de serviço))](./consultas/visao_360_ordens_servico.sql)**
