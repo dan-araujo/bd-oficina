@@ -43,7 +43,7 @@ O diagrama abaixo representa a estrutura lógica do banco de dados, com as entid
 > Este modelo segue a filosofia **ER (Entidade-Relacionamento)**, representando as entidades, atributos e relacionamentos de forma lógica e relacional. A estrutura prioriza a normalização, o uso de **chaves primárias e estrangeiras**, além da aplicação de **restrições de integridade** (CHECK, DEFAULT, ENUM) e **mapeamento direto para o modelo físico relacional**.
 
 ### 🧩 Estrutura do banco (DDL)
-O banco utilizada codificação utf8mb4_general_ci para compatibilidade ampla com MySQL 8+.
+O banco utiliza da codificação utf8mb4_general_ci para compatibilidade ampla com MySQL 8+.
 
 ### 🔄 Triggers de Negócio
 ##### 🔹 Validação de preço de venda das peças
