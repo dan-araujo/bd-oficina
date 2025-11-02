@@ -34,7 +34,7 @@ O projeto inclui:
 - Pagamentos podem ocorrer em múltiplicas parcelas (`1:N`).
 - Nenhum peça pode ter **preço de venda menor que o custo** (validado via trigger).
 
-### Modelo Entidade-Relacionamento (EER)
+## 🧱 Modelo Entidade-Relacionamento (EER)
 O diagrama abaixo representa a estrutura lógica do banco de dados, com as entidades, chaves-primárias, chaves-estrangeiras e relacionamentos definidos:
 
  📎**Arquivo:** `Diagrama Entidade-Relacionamento Oficina.png`
