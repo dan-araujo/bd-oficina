@@ -1,0 +1,1 @@
+SELECT id, nome, email FROM clientes ORDER BY nome;
