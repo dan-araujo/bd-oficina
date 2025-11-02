@@ -1,0 +1,5 @@
+CREATE TABLE servicos (
+id INT PRIMARY KEY AUTO_INCREMENT,
+nome VARCHAR(80) NOT NULL,
+preco_base DECIMAL(10,2) NOT NULL CHECK (preco_base > 0)
+);
