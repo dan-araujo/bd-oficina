@@ -1,0 +1,9 @@
+CREATE TABLE veiculos (
+id INT PRIMARY KEY AUTO_INCREMENT,
+id_cliente INT NOT NULL,
+placa VARCHAR(8) NOT NULL UNIQUE,
+marca VARCHAR(40) NOT NULL, 
+modelo VARCHAR(60) NOT NULL,
+ano SMALLINT NOT NULL CHECK (ano >= 1970),
+CONSTRAINT fk_veiculo_cliente FOREIGN KEY (id_cliente) REFERENCES clientes(id)
+)
