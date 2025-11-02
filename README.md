@@ -26,7 +26,7 @@ O projeto inclui:
 | **pagamentos**     |     | Registra pagamentos de cada ordem de serviço (permite parcelamento).                 |
 
 ## ⚙️ Regras de Negócio
-- Uma **ordem de serviço pertence a **um cliente** e a **um veículo.**
+- Uma ordem de serviço pertence a **um cliente** e a **um veículo.**
 - Cada ordem de serviço possui um **funcionário responsável.**
 - O **valor total da ordem de serviço** é a soma de todos os serviços e peças utilizados, considerando possíveis descontos.
 - O status da ordem de serviço pode ser:
